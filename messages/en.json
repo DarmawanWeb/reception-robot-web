@@ -1,0 +1,186 @@
+{
+  "Meta": {
+    "title": "{brand}: receptionist robots for Bali lobbies",
+    "description": "Bali Editions of Snow and Timo plus the Bali-built Taksu Kiosk: they greet with Om Swastiastu, show Aksara Bali per Pergub 80/2018, print tickets and visitor passes, and hold a spoken conversation."
+  },
+  "Nav": {
+    "skip": "Skip to content",
+    "home": "Home",
+    "compare": "Compare",
+    "aksara": "Aksara Bali",
+    "demo": "Demo",
+    "contact": "Contact",
+    "cta": "Book a demo",
+    "menu": "Open menu",
+    "close": "Close",
+    "language": "Language",
+    "theme": "Switch light or dark theme"
+  },
+  "Common": {
+    "tryDemo": "Try the demo",
+    "openDemo": "Open demo",
+    "requestQuote": "Request a quote",
+    "viewDetails": "View details",
+    "newTab": "(opens in a new tab)"
+  },
+  "Home": {
+    "hero": {
+      "greeting": "Om Swastiastu",
+      "title": "Receptionists that welcome guests with Om Swastiastu",
+      "body": "Snow and Timo Bali Edition in traditional dress, plus our own Taksu Kiosk. All of them show Aksara Bali, print tickets and visitor passes, and talk with guests in Indonesian or English.",
+      "imageAlt": "Snow and Timo Bali Edition in Balinese traditional dress",
+      "ctaDemo": "Talk to a robot",
+      "ctaCompare": "Compare all three"
+    },
+    "lineup": {
+      "title": "Choose your receptionist",
+      "intro": "Two mobile robots we modify for Bali, and one static kiosk we build ourselves.",
+      "scale": "Drawn to their real height",
+      "height": "{cm} cm"
+    },
+    "voice": {
+      "title": "Holds a conversation",
+      "body": "Speech recognition and the robot’s voice run on your own server, not an outside service. Guests just ask; the robot answers from your venue’s data.",
+      "cta": "Try talking to it"
+    },
+    "features": {
+      "title": "One kiosk app for all three",
+      "intro": "We build the Taksu kiosk software ourselves, so it adapts to your services."
+    },
+    "aksara": {
+      "title": "Aksara Bali on every screen and printout",
+      "intro": "Our kiosks write venue names in Aksara Bali above the Latin script, following Bali’s signage rules.",
+      "cta": "Try the digital sign"
+    },
+    "bali": {
+      "title": "Knows the Balinese calendar",
+      "intro": "The robot’s greetings and notices follow the holy days of the Pawukon calendar.",
+      "todayLabel": "Today in the Pawukon calendar",
+      "holyToday": "Rahajeng rahina {name}",
+      "nextHoly": "{name} in {days, plural, one {# day} other {# days}}"
+    },
+    "useCases": {
+      "title": "Where our robots work",
+      "intro": "Every venue moves guests differently. We tailor the content and the robot.",
+      "demoLink": "See an example",
+      "recommended": "Recommended"
+    },
+    "process": {
+      "title": "How we install",
+      "intro": "From the site survey to a robot at work in your lobby."
+    }
+  },
+  "Robots": {
+    "mobile": "Mobile",
+    "static": "Static",
+    "escort": "Walks guests to rooms",
+    "printerBuiltIn": "Built-in printer",
+    "printerStation": "Printer station",
+    "price": "{tier, select, low {Most affordable} mid {Mid-range} other {Premium}}",
+    "height": "Height",
+    "printer": "Printer",
+    "priceLabel": "Price",
+    "yes": "Yes",
+    "no": "No, prints a route slip"
+  },
+  "Robot": {
+    "back": "All robots",
+    "specs": "Specifications",
+    "features": "What {name} can do",
+    "balinese": "Balinese touches",
+    "idealFor": "Ideal for",
+    "localContent": "Local content",
+    "demoTitle": "Try {name} in your browser",
+    "demoBody": "This demo shows {name}’s screen at {site}: greetings, conversation, queues, the guest book, and printing.",
+    "sourceTitle": "About these specifications",
+    "compareCta": "Compare with the others",
+    "height": "Height",
+    "breadcrumb": "You are here"
+  },
+  "Compare": {
+    "metaTitle": "Compare Snow, Timo, and Taksu Kiosk",
+    "metaDescription": "Snow and Timo Bali Edition compared with the Bali-built Taksu Kiosk: mobility, printing, local content, and price.",
+    "title": "Compare all three",
+    "intro": "Mobile robots for a lively experience, a static kiosk for affordable printing and high local content.",
+    "feature": "Feature",
+    "note": "The Taksu Kiosk TKDN percentage follows official certification."
+  },
+  "Aksara": {
+    "metaTitle": "Aksara Bali on robots and kiosks",
+    "metaDescription": "Digital signage and printouts with Aksara Bali above Latin, following Bali Governor Regulation 80/2018 and Bali Regional Regulation 1/2018.",
+    "title": "Aksara Bali on every screen and printout",
+    "intro": "Our kiosks write venue names in Aksara Bali above the Latin script, following Bali’s signage rules.",
+    "ruleTitle": "The regulation",
+    "signageTitle": "Try the digital sign",
+    "signageLabel": "Organisation or business name",
+    "signagePlaceholder": "For example Kantor Désa Taman Sari",
+    "signageHint": "A plain e reads as pepet; type é for the taling sound.",
+    "writerLabel": "Write a guest’s name in Aksara Bali",
+    "writerPlaceholder": "Type a name, for example Made",
+    "writerHint": "The kiosk uses this on printed visitor passes.",
+    "writerEmpty": "Your Aksara Bali will appear here",
+    "reviewNote": "Automatic transliteration. For official signs we review it with Balinese language advisers."
+  },
+  "Demo": {
+    "metaTitle": "Receptionist robot demos",
+    "metaDescription": "Talk to the Bali receptionist robots, take a queue number, sign the guest book, and build your own kiosk in the Studio.",
+    "title": "Demo",
+    "intro": "Every demo runs in the browser. The venue data inside is sample data.",
+    "robotsTitle": "Robots at sample venues",
+    "studioTitle": "Build your own kiosk",
+    "launcherTitle": "Build your own demo",
+    "launcherBody": "Pick the robot and sample venue, then open it full screen.",
+    "launcherCta": "Open the kiosk launcher",
+    "tip": "Tip: allow the microphone to talk to the robot, and use a tablet in landscape for the closest feel."
+  },
+  "Contact": {
+    "metaTitle": "Book a receptionist robot demo",
+    "metaDescription": "Request a quote or book a demo of Snow, Timo, or Taksu Kiosk at your office, hotel, or hospital.",
+    "title": "Book a demo",
+    "intro": "Tell us about your venue and how guests move through it. We can come for a demo, then put together a quote.",
+    "form": {
+      "name": "Name",
+      "organization": "Organisation or business",
+      "venue": "Type of venue",
+      "venues": {
+        "office": "Service office",
+        "hospitality": "Hotel or resort",
+        "healthcare": "Hospital or clinic",
+        "other": "Other"
+      },
+      "robot": "Robot of interest",
+      "robotUnsure": "Not sure yet",
+      "message": "Message",
+      "messagePlaceholder": "Example: a village office with one counter that needs printed queues and Aksara Bali signage.",
+      "sendWhatsapp": "Send via WhatsApp",
+      "sendEmail": "Send via email",
+      "whatsappMissing": "No WhatsApp number is configured yet. Please use email for now.",
+      "required": "Please fill in your name, organisation, and message first.",
+      "subject": "Receptionist robot demo request",
+      "template": "Hello, I am {name} from {organization} ({venue}).\nRobot of interest: {robot}\n\n{message}"
+    },
+    "direct": {
+      "title": "Direct contact",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "location": "Location"
+    }
+  },
+  "Cta": {
+    "title": "Want to see the robots in person?",
+    "body": "We can visit your office, hotel, or school for a demo.",
+    "button": "Book a demo"
+  },
+  "Footer": {
+    "tagline": "Receptionist robots that understand Aksara Bali, the Pawukon calendar, and your guests.",
+    "robots": "Robots",
+    "explore": "Explore",
+    "partOf": "Part of {company}",
+    "rights": "© {year} {brand}. All rights reserved."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "This address does not exist or has moved.",
+    "back": "Back to home"
+  }
+}

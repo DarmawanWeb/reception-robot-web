@@ -1,0 +1,186 @@
+{
+  "Meta": {
+    "title": "{brand}: robot resepsionis untuk lobi di Bali",
+    "description": "Snow dan Timo Edisi Bali serta Taksu Kiosk buatan Bali: menyapa Om Swastiastu, menampilkan Aksara Bali sesuai Pergub 80/2018, mencetak tiket dan kartu tamu, dan bisa diajak bicara."
+  },
+  "Nav": {
+    "skip": "Langsung ke konten",
+    "home": "Beranda",
+    "compare": "Bandingkan",
+    "aksara": "Aksara Bali",
+    "demo": "Demo",
+    "contact": "Kontak",
+    "cta": "Jadwalkan demo",
+    "menu": "Buka menu",
+    "close": "Tutup",
+    "language": "Bahasa",
+    "theme": "Ganti tema terang atau gelap"
+  },
+  "Common": {
+    "tryDemo": "Coba demo",
+    "openDemo": "Buka demo",
+    "requestQuote": "Minta penawaran",
+    "viewDetails": "Lihat detail",
+    "newTab": "(terbuka di tab baru)"
+  },
+  "Home": {
+    "hero": {
+      "greeting": "Om Swastiastu",
+      "title": "Resepsionis yang menyambut tamu dengan Om Swastiastu",
+      "body": "Snow dan Timo edisi Bali berbusana adat, ditambah Taksu Kiosk buatan kami sendiri. Semuanya menampilkan Aksara Bali, mencetak tiket dan kartu tamu, dan bisa diajak bicara dalam Bahasa Indonesia atau Inggris.",
+      "imageAlt": "Snow dan Timo edisi Bali berbusana adat Bali",
+      "ctaDemo": "Ajak robot bicara",
+      "ctaCompare": "Bandingkan ketiganya"
+    },
+    "lineup": {
+      "title": "Pilih resepsionis Anda",
+      "intro": "Dua robot bergerak yang kami modifikasi untuk Bali, dan satu kios statis buatan kami.",
+      "scale": "Digambar sesuai tinggi sebenarnya",
+      "height": "{cm} cm"
+    },
+    "voice": {
+      "title": "Bisa diajak bicara",
+      "body": "Pengenalan suara dan suara robot berjalan di server sendiri, bukan layanan luar. Tamu cukup bertanya, robot menjawab dari data tempat Anda.",
+      "cta": "Coba ajak bicara"
+    },
+    "features": {
+      "title": "Satu aplikasi kios untuk ketiganya",
+      "intro": "Perangkat lunak kios Taksu kami kembangkan sendiri, jadi bisa disesuaikan dengan layanan Anda."
+    },
+    "aksara": {
+      "title": "Aksara Bali di setiap layar dan cetakan",
+      "intro": "Kios kami menulis nama tempat dengan Aksara Bali di atas huruf Latin, mengikuti aturan papan nama di Bali.",
+      "cta": "Coba papan nama digital"
+    },
+    "bali": {
+      "title": "Paham kalender Bali",
+      "intro": "Salam dan informasi robot mengikuti rahinan dalam kalender Pawukon.",
+      "todayLabel": "Hari ini menurut kalender Pawukon",
+      "holyToday": "Rahajeng rahina {name}",
+      "nextHoly": "{name} dalam {days, plural, other {# hari}}"
+    },
+    "useCases": {
+      "title": "Di mana robot kami bekerja",
+      "intro": "Setiap tempat punya alur tamu berbeda. Kami menyesuaikan konten dan robotnya.",
+      "demoLink": "Lihat contohnya",
+      "recommended": "Disarankan"
+    },
+    "process": {
+      "title": "Cara kami memasang",
+      "intro": "Dari survei sampai robot bekerja di lobi Anda."
+    }
+  },
+  "Robots": {
+    "mobile": "Bergerak",
+    "static": "Statis",
+    "escort": "Mengantar tamu",
+    "printerBuiltIn": "Printer bawaan",
+    "printerStation": "Stasiun printer",
+    "price": "{tier, select, low {Paling hemat} mid {Menengah} other {Premium}}",
+    "height": "Tinggi",
+    "printer": "Printer",
+    "priceLabel": "Harga",
+    "yes": "Ya",
+    "no": "Tidak, cetak slip rute"
+  },
+  "Robot": {
+    "back": "Semua robot",
+    "specs": "Spesifikasi",
+    "features": "Yang bisa dilakukan {name}",
+    "balinese": "Sentuhan Bali",
+    "idealFor": "Cocok untuk",
+    "localContent": "Komponen lokal",
+    "demoTitle": "Coba {name} di browser",
+    "demoBody": "Demo ini menampilkan layar {name} di {site}: sapaan, ajak bicara, antrean, buku tamu, dan cetak.",
+    "sourceTitle": "Catatan spesifikasi",
+    "compareCta": "Bandingkan dengan yang lain",
+    "height": "Tinggi",
+    "breadcrumb": "Posisi halaman"
+  },
+  "Compare": {
+    "metaTitle": "Bandingkan Snow, Timo, dan Taksu Kiosk",
+    "metaDescription": "Perbandingan robot resepsionis Snow dan Timo edisi Bali dengan Taksu Kiosk buatan Bali: mobilitas, printer, TKDN, dan harga.",
+    "title": "Bandingkan ketiganya",
+    "intro": "Robot bergerak untuk pengalaman yang hidup, kios statis untuk layanan cetak yang hemat dan komponen lokal tinggi.",
+    "feature": "Fitur",
+    "note": "Persentase TKDN Taksu Kiosk mengikuti hasil sertifikasi resmi."
+  },
+  "Aksara": {
+    "metaTitle": "Aksara Bali pada robot dan kios",
+    "metaDescription": "Papan nama digital dan cetakan dengan Aksara Bali di atas huruf Latin, sesuai Pergub Bali 80/2018 dan Perda Bali 1/2018.",
+    "title": "Aksara Bali di setiap layar dan cetakan",
+    "intro": "Kios kami menulis nama tempat dengan Aksara Bali di atas huruf Latin, mengikuti aturan papan nama di Bali.",
+    "ruleTitle": "Dasar aturan",
+    "signageTitle": "Coba papan nama digital",
+    "signageLabel": "Nama instansi atau usaha",
+    "signagePlaceholder": "Misalnya Kantor Désa Taman Sari",
+    "signageHint": "Huruf e dibaca pepet; ketik é untuk bunyi taling.",
+    "writerLabel": "Tulis nama tamu dalam Aksara Bali",
+    "writerPlaceholder": "Ketik nama, misalnya Made",
+    "writerHint": "Fitur ini dipakai pada kartu tamu yang dicetak kios.",
+    "writerEmpty": "Aksara Bali akan muncul di sini",
+    "reviewNote": "Transliterasi otomatis. Untuk papan nama resmi, kami meninjaunya bersama penyuluh Bahasa Bali."
+  },
+  "Demo": {
+    "metaTitle": "Demo robot resepsionis",
+    "metaDescription": "Ajak bicara robot resepsionis Bali, ambil nomor antrean, isi buku tamu, dan rakit kios Anda sendiri di Studio.",
+    "title": "Demo",
+    "intro": "Semua demo berjalan di browser. Data tempat di dalamnya adalah contoh.",
+    "robotsTitle": "Robot di tempat contoh",
+    "studioTitle": "Rakit kios Anda sendiri",
+    "launcherTitle": "Rakit demo sendiri",
+    "launcherBody": "Pilih robot dan contoh tempat, lalu buka dalam layar penuh.",
+    "launcherCta": "Buka peluncur kios",
+    "tip": "Tips: izinkan mikrofon untuk mengajak robot bicara, dan buka di tablet mendatar untuk rasa paling mirip robot."
+  },
+  "Contact": {
+    "metaTitle": "Jadwalkan demo robot resepsionis",
+    "metaDescription": "Minta penawaran atau jadwalkan demo Snow, Timo, atau Taksu Kiosk di kantor, hotel, atau rumah sakit Anda.",
+    "title": "Jadwalkan demo",
+    "intro": "Ceritakan tempat Anda dan alur tamunya. Kami bisa datang untuk demo, lalu menyusun penawaran.",
+    "form": {
+      "name": "Nama",
+      "organization": "Instansi atau usaha",
+      "venue": "Jenis tempat",
+      "venues": {
+        "office": "Kantor pelayanan",
+        "hospitality": "Hotel atau resor",
+        "healthcare": "Rumah sakit atau puskesmas",
+        "other": "Lainnya"
+      },
+      "robot": "Robot yang diminati",
+      "robotUnsure": "Belum tahu",
+      "message": "Pesan",
+      "messagePlaceholder": "Contoh: kantor desa dengan satu loket, butuh antrean tercetak dan papan nama Aksara Bali.",
+      "sendWhatsapp": "Kirim lewat WhatsApp",
+      "sendEmail": "Kirim lewat email",
+      "whatsappMissing": "Nomor WhatsApp belum diatur. Gunakan email untuk sementara.",
+      "required": "Isi nama, instansi, dan pesan terlebih dahulu.",
+      "subject": "Permintaan demo robot resepsionis",
+      "template": "Halo, saya {name} dari {organization} ({venue}).\nRobot yang diminati: {robot}\n\n{message}"
+    },
+    "direct": {
+      "title": "Kontak langsung",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "location": "Lokasi"
+    }
+  },
+  "Cta": {
+    "title": "Ingin melihat robotnya langsung?",
+    "body": "Kami bisa datang ke kantor, hotel, atau sekolah Anda untuk demo.",
+    "button": "Jadwalkan demo"
+  },
+  "Footer": {
+    "tagline": "Robot resepsionis yang paham Aksara Bali, kalender Pawukon, dan tamu Anda.",
+    "robots": "Robot",
+    "explore": "Jelajahi",
+    "partOf": "Bagian dari {company}",
+    "rights": "© {year} {brand}. Hak cipta dilindungi."
+  },
+  "NotFound": {
+    "title": "Halaman tidak ditemukan",
+    "body": "Alamat ini tidak ada atau sudah dipindahkan.",
+    "back": "Kembali ke beranda"
+  }
+}
