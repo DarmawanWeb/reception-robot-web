@@ -10,6 +10,8 @@ import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { ReactNode } from 'react';
+import { SiteFooter } from '@/components/layout/site-footer';
+import { SiteHeader } from '@/components/layout/site-header';
 import { routing } from '@/i18n/routing';
 import { siteConfig } from '@/lib/site-config';
 
@@ -62,9 +64,11 @@ export default async function LocaleLayout({
         </a>
         <ThemeProvider>
           <NextIntlClientProvider>
+            <SiteHeader />
             <main id="main" className="flex-1">
               {children}
             </main>
+            <SiteFooter />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
