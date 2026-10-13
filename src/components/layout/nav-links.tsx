@@ -30,7 +30,7 @@ export function NavLinks({
                 onClick={onNavigate}
                 aria-current={active ? 'page' : undefined}
                 className={cn(
-                  'hover:bg-surface-muted block rounded-md px-3 py-2 text-sm font-semibold transition-colors',
+                  'hover:bg-surface-muted block rounded-md px-3 py-2.5 text-lg font-semibold transition-colors lg:py-2 lg:text-sm',
                   active ? 'text-primary' : 'text-foreground/80',
                 )}
               >
