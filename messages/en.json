@@ -76,6 +76,51 @@
         }
       }
     },
+    "why": {
+      "title": "Not a lobby ornament",
+      "intro": "Receptionist robots often end up as ornaments in a corner of the lobby. This is what keeps ours in daily use.",
+      "caption": "How our robots compare with the receptionist robots you often see",
+      "topic": "Topic",
+      "often": "What you often see",
+      "rows": {
+        "culture": {
+          "topic": "Language and culture",
+          "often": "Factory greetings in English or Mandarin.",
+          "us": "Greets with Om Swastiastu, speaks Indonesian and English, writes the venue name in Aksara Bali, and follows the Pawukon holy days.",
+          "link": "Aksara Bali on screen"
+        },
+        "content": {
+          "topic": "What is on screen",
+          "often": "The same generic menu for every buyer.",
+          "us": "Your own services, counters, floor plan, and organisation chart. Staff are trained to keep them current.",
+          "link": "Open the demos"
+        },
+        "print": {
+          "topic": "Printouts",
+          "often": "Screen only. Guests photograph the screen to remember their number.",
+          "us": "Queue tickets, visitor passes, and route slips print on the spot, each with a QR code.",
+          "link": "See Taksu Kiosk"
+        },
+        "offline": {
+          "topic": "When the internet drops",
+          "often": "Cloud-dependent. Once the connection goes, the robot goes quiet.",
+          "us": "Speech is processed on a local server, and the robot keeps answering from your venue’s data.",
+          "link": "When the server is busy"
+        },
+        "procurement": {
+          "topic": "Public procurement",
+          "often": "Fully imported, which makes local-content rules hard to meet.",
+          "us": "Taksu Kiosk is designed and assembled in Bali with high local content, and is being prepared for TKDN certification.",
+          "link": "Compare all three"
+        },
+        "service": {
+          "topic": "After installation",
+          "often": "Servicing through a distributor, with parts ordered from overseas.",
+          "us": "Site survey, installation, staff training, servicing, and updates from our team in Bali.",
+          "link": "How we install"
+        }
+      }
+    },
     "aksara": {
       "title": "Aksara Bali on every screen and printout",
       "intro": "Our kiosks write venue names in Aksara Bali above the Latin script, following Bali’s signage rules.",

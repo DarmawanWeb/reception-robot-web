@@ -9,6 +9,7 @@ import snowTimoBali from '@/assets/snow-timo-bali.webp';
 import { Lineup } from '@/components/robots/lineup';
 import { ScreenShowcase } from '@/components/robots/screen-showcase';
 import { UseCases } from '@/components/robots/use-cases';
+import { WhyVenues } from '@/components/robots/why-venues';
 import { Container } from '@/components/shared/container';
 import { CtaBand } from '@/components/shared/cta-band';
 import { ExternalButton } from '@/components/shared/external-button';
@@ -22,6 +23,9 @@ import { pageMetadata } from '@/lib/metadata';
 import { screenImage, showcaseScreens } from '@/lib/screens';
 
 type Props = { params: Promise<{ locale: string }> };
+
+/** The installation steps, linked from the comparison. */
+const INSTALL_ID = 'cara-memasang';
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = await localeFromParams(params);
@@ -110,6 +114,8 @@ export default async function HomePage({ params }: Props) {
         </Container>
       </section>
 
+      <WhyVenues locale={locale} installId={INSTALL_ID} />
+
       <section className="border-border bg-surface border-y py-16 lg:py-24">
         <Container className="grid gap-14 lg:grid-cols-2">
           <div>
@@ -140,7 +146,7 @@ export default async function HomePage({ params }: Props) {
         </Container>
       </section>
 
-      <section className="pb-4">
+      <section id={INSTALL_ID} className="scroll-mt-20 pb-4">
         <Container>
           <SectionHeading title={t('process.title')} intro={t('process.intro')} />
           <Steps className="mt-12" steps={localizeSteps(locale)} />

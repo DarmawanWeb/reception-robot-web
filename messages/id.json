@@ -76,6 +76,51 @@
         }
       }
     },
+    "why": {
+      "title": "Bukan robot pajangan",
+      "intro": "Robot resepsionis sering berakhir jadi pajangan di sudut lobi. Ini yang membuat robot kami tetap dipakai setiap hari.",
+      "caption": "Perbandingan robot kami dengan robot resepsionis yang sering ditemui",
+      "topic": "Hal",
+      "often": "Yang sering ditemui",
+      "rows": {
+        "culture": {
+          "topic": "Bahasa dan budaya",
+          "often": "Sapaan bawaan pabrik dalam bahasa Inggris atau Mandarin.",
+          "us": "Menyapa dengan Om Swastiastu, bicara bahasa Indonesia dan Inggris, menulis nama tempat dalam Aksara Bali, dan mengikuti rahinan Pawukon.",
+          "link": "Aksara Bali di layar"
+        },
+        "content": {
+          "topic": "Isi layar",
+          "often": "Menu umum yang sama untuk semua pembeli.",
+          "us": "Layanan, loket, denah, dan struktur organisasi tempat Anda sendiri. Staf dilatih untuk memperbaruinya.",
+          "link": "Lihat demonya"
+        },
+        "print": {
+          "topic": "Cetakan",
+          "often": "Hanya layar. Tamu memotret layar supaya ingat nomornya.",
+          "us": "Tiket antrean, kartu tamu, dan slip rute tercetak di tempat, lengkap dengan QR.",
+          "link": "Lihat Taksu Kiosk"
+        },
+        "offline": {
+          "topic": "Saat internet putus",
+          "often": "Bergantung pada cloud. Begitu koneksi hilang, robotnya diam.",
+          "us": "Suara diproses di server lokal, dan robot tetap menjawab dari data tempat Anda.",
+          "link": "Saat server sedang sibuk"
+        },
+        "procurement": {
+          "topic": "Pengadaan instansi",
+          "often": "Impor penuh, sehingga sulit memenuhi syarat komponen dalam negeri.",
+          "us": "Taksu Kiosk dirancang dan dirakit di Bali dengan komponen lokal tinggi, dan disiapkan untuk sertifikasi TKDN.",
+          "link": "Bandingkan ketiganya"
+        },
+        "service": {
+          "topic": "Setelah terpasang",
+          "often": "Servis lewat distributor, suku cadang dipesan dari luar negeri.",
+          "us": "Survei, pemasangan, pelatihan staf, servis, dan pembaruan dari tim kami di Bali.",
+          "link": "Cara kami memasang"
+        }
+      }
+    },
     "aksara": {
       "title": "Aksara Bali di setiap layar dan cetakan",
       "intro": "Kios kami menulis nama tempat dengan Aksara Bali di atas huruf Latin, mengikuti aturan papan nama di Bali.",
