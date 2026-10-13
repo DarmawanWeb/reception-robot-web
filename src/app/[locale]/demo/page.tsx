@@ -1,6 +1,6 @@
 import { type DemoEntry, demos, pick } from '@taksu/content';
-import { RobotIllustration } from '@taksu/ui/brand/robot-illustration';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { Container } from '@/components/shared/container';
 import { CtaBand } from '@/components/shared/cta-band';
@@ -9,6 +9,7 @@ import { SectionHeading } from '@/components/shared/section-heading';
 import { kioskUrl } from '@/lib/links';
 import { localeFromParams, resolveLocale } from '@/lib/locale';
 import { pageMetadata } from '@/lib/metadata';
+import { robotScreen } from '@/lib/screens';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -47,8 +48,14 @@ export default async function DemoPage({ params }: Props) {
                 key={demo.id}
                 className="border-border bg-surface flex flex-col rounded-xl border p-6"
               >
-                <div className="bg-surface-muted rounded-lg px-10 pt-6">
-                  <RobotIllustration kind={demo.robot ?? 'kiosk'} className="mx-auto max-w-36" />
+                <div className="relative aspect-video overflow-hidden rounded-lg bg-[#0e1335] ring-1 ring-black/5">
+                  <Image
+                    src={robotScreen(locale, demo.robot ?? 'kiosk').image}
+                    alt=""
+                    fill
+                    sizes="(min-width: 768px) 22rem, 100vw"
+                    className="object-cover object-top"
+                  />
                 </div>
                 <h3 className="mt-5 text-xl font-semibold">{pick(demo.title, locale)}</h3>
                 <p className="text-muted-foreground mt-1 flex-1 text-sm leading-relaxed">
