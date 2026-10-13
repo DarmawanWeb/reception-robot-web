@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import snowTimoBali from '@/assets/snow-timo-bali.webp';
+import taksuKiosk from '@/assets/taksu-kiosk.webp';
 import { priceKey } from '@/components/robots/lineup';
 import { Container } from '@/components/shared/container';
 import { CtaBand } from '@/components/shared/cta-band';
@@ -81,13 +82,14 @@ export default async function RobotPage({ params }: Props) {
                   className="h-auto w-full"
                 />
               ) : (
-                <div className="bg-surface-muted p-10">
-                  <RobotIllustration
-                    kind={robot.slug}
-                    label={robot.name}
-                    className="mx-auto max-w-64"
-                  />
-                </div>
+                <Image
+                  src={taksuKiosk}
+                  alt={t('kioskImageAlt')}
+                  placeholder="blur"
+                  priority
+                  sizes="(min-width: 1024px) 34rem, 100vw"
+                  className="h-auto w-full"
+                />
               )}
             </div>
             <div>
