@@ -10,6 +10,8 @@ export interface SectionHeadingProps {
   title: string;
   intro?: string;
   as?: 'h1' | 'h2';
+  /** For `aria-labelledby` on the section. */
+  id?: string;
   className?: string;
 }
 
@@ -18,6 +20,7 @@ export function SectionHeading({
   title,
   intro,
   as: Heading = 'h2',
+  id,
   className,
 }: SectionHeadingProps) {
   return (
@@ -26,6 +29,7 @@ export function SectionHeading({
         <AksaraText latin={aksara} decorative className="text-primary block text-lg" />
       ) : null}
       <Heading
+        id={id}
         className={cn(
           'font-semibold tracking-tight [font-stretch:90%]',
           Heading === 'h1'
