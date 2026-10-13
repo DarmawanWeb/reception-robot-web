@@ -167,10 +167,10 @@
     "demoTitle": "Coba {name} di browser",
     "demoBody": "Demo ini menampilkan layar {name} di {site}: sapaan, ajak bicara, antrean, buku tamu, dan cetak.",
     "sourceTitle": "Catatan spesifikasi",
-    "compareCta": "Bandingkan dengan yang lain",
     "height": "Tinggi",
     "breadcrumb": "Posisi halaman",
-    "kioskImageAlt": "Taksu Kiosk dengan mahkota bergaya candi dan layar sentuh portrait, di samping tiket antrean yang dicetaknya"
+    "kioskImageAlt": "Taksu Kiosk dengan mahkota bergaya candi dan layar sentuh portrait, di samping tiket antrean yang dicetaknya",
+    "screenAlt": "Layar awal {name} di {site}"
   },
   "Compare": {
     "metaTitle": "Bandingkan Snow, Timo, dan Taksu Kiosk",

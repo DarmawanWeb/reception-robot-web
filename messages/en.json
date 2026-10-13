@@ -167,10 +167,10 @@
     "demoTitle": "Try {name} in your browser",
     "demoBody": "This demo shows {name}’s screen at {site}: greetings, conversation, queues, the guest book, and printing.",
     "sourceTitle": "About these specifications",
-    "compareCta": "Compare with the others",
     "height": "Height",
     "breadcrumb": "You are here",
-    "kioskImageAlt": "Taksu Kiosk with its temple-style crown and portrait touch screen, beside a queue ticket it printed"
+    "kioskImageAlt": "Taksu Kiosk with its temple-style crown and portrait touch screen, beside a queue ticket it printed",
+    "screenAlt": "{name}’s start screen at {site}"
   },
   "Compare": {
     "metaTitle": "Compare Snow, Timo, and Taksu Kiosk",

@@ -2,6 +2,7 @@ import { getRobot, getSite, pick, robots, specSourceNote } from '@taksu/content'
 import { RobotIllustration } from '@taksu/ui/brand/robot-illustration';
 import { Badge } from '@taksu/ui/components/badge';
 import { Button } from '@taksu/ui/components/button';
+import { cn } from '@taksu/ui/lib/utils';
 import { Check } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -18,6 +19,7 @@ import { Link } from '@/i18n/navigation';
 import { robotDemoUrl } from '@/lib/links';
 import { localeFromParams, resolveLocale } from '@/lib/locale';
 import { pageMetadata } from '@/lib/metadata';
+import { robotScreen } from '@/lib/screens';
 
 type Props = { params: Promise<{ locale: string; robot: string }> };
 
@@ -51,6 +53,7 @@ export default async function RobotPage({ params }: Props) {
     getTranslations('Home.lineup'),
   ]);
   const demo = robotDemoUrl(locale, robot.slug, robot.demoSite);
+  const screen = robotScreen(locale, robot.slug);
   const others = robots.filter((entry) => entry.slug !== robot.slug);
 
   return (
@@ -183,20 +186,37 @@ export default async function RobotPage({ params }: Props) {
       {site ? (
         <section className="py-12">
           <Container>
-            <div className="dark border-border bg-background text-foreground rounded-xl border p-8 sm:p-12">
-              <h2 className="text-3xl font-semibold [font-stretch:90%]">
-                {t('demoTitle', { name: robot.name })}
-              </h2>
-              <p className="text-muted-foreground mt-3 max-w-2xl">
-                {t('demoBody', { name: robot.name, site: site.name })}
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <ExternalButton href={demo} newTabLabel={common('newTab')}>
+            <div
+              className={cn(
+                'dark border-border bg-background text-foreground grid items-center gap-10 overflow-hidden rounded-xl border p-8 sm:p-12',
+                screen.portrait
+                  ? 'md:grid-cols-[minmax(0,1fr)_14rem]'
+                  : 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]',
+              )}
+            >
+              <div>
+                <h2 className="text-3xl font-semibold [font-stretch:90%]">
+                  {t('demoTitle', { name: robot.name })}
+                </h2>
+                <p className="text-muted-foreground mt-3 max-w-xl leading-relaxed">
+                  {t('demoBody', { name: robot.name, site: site.name })}
+                </p>
+                <ExternalButton href={demo} className="mt-6" newTabLabel={common('newTab')}>
                   {common('openDemo')}
                 </ExternalButton>
-                <Button asChild variant="outline">
-                  <Link href="/compare">{t('compareCta')}</Link>
-                </Button>
+              </div>
+              <div
+                className={cn(
+                  'rounded-2xl bg-[#070a20] p-2 ring-1 ring-[#e6bd52]/30',
+                  screen.portrait && 'mx-auto w-full max-w-56',
+                )}
+              >
+                <Image
+                  src={screen.image}
+                  alt={t('screenAlt', { name: robot.name, site: site.name })}
+                  sizes={screen.portrait ? '14rem' : '(min-width: 1024px) 36rem, 100vw'}
+                  className="h-auto w-full rounded-xl"
+                />
               </div>
             </div>
           </Container>
