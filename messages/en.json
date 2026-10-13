@@ -37,14 +37,44 @@
       "scale": "Drawn to their real height",
       "height": "{cm} cm"
     },
-    "voice": {
-      "title": "Holds a conversation",
-      "body": "Speech recognition and the robot’s voice run on your own server, not an outside service. Guests just ask; the robot answers from your venue’s data.",
-      "cta": "Try talking to it"
-    },
-    "features": {
-      "title": "One kiosk app for all three",
-      "intro": "We build the Taksu kiosk software ourselves, so it adapts to your services."
+    "showcase": {
+      "title": "One app on all three",
+      "intro": "Snow, Timo, and Taksu Kiosk run the same kiosk app, which we build ourselves. Pick a service to see its screen.",
+      "tabs": "Services on the robot’s screen",
+      "note": "Screens from the Timo demo at a public service office. The venue data is sample data.",
+      "open": "Try it in the demo",
+      "screens": {
+        "home": {
+          "title": "Main menu",
+          "body": "Guests are greeted, then pick a service with one touch. The menu, counters, and content are set up for your venue.",
+          "alt": "Main menu on Timo’s screen: talk, take a queue number, guest book, and directions"
+        },
+        "voice": {
+          "title": "Conversation",
+          "body": "Guests ask by voice or by typing. Speech is processed on your own server, and answers come only from your venue’s data.",
+          "alt": "A conversation with Timo about what is needed for an ID card"
+        },
+        "queue": {
+          "title": "Queue",
+          "body": "A queue number in Balinese numerals, an estimated wait, and a QR to follow your turn, printed on the spot.",
+          "alt": "Queue ticket A-001 with Balinese numerals and a QR code"
+        },
+        "guestbook": {
+          "title": "Guest book",
+          "body": "Visitors register on screen, and a pass with their name in Aksara Bali and a QR prints straight away.",
+          "alt": "Visitor pass for Ni Luh Putu Sari with her name in Aksara Bali"
+        },
+        "route": {
+          "title": "Directions",
+          "body": "A route on the floor plan with spoken steps. Snow and Timo can walk guests there, and Taksu Kiosk prints a route slip.",
+          "alt": "Office floor plan with the route to Counter B"
+        },
+        "aksara": {
+          "title": "Name in Aksara Bali",
+          "body": "Guests type their name, and the kiosk writes it in Aksara Bali and prints it as a keepsake.",
+          "alt": "The name Wayan Sukarta in Aksara Bali on screen and on a printout"
+        }
+      }
     },
     "aksara": {
       "title": "Aksara Bali on every screen and printout",

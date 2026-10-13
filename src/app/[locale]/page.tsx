@@ -1,14 +1,13 @@
 import { OM_SWASTIASTU } from '@taksu/bali';
 import { aksaraRegulation, type Locale, pick, receptionProcess } from '@taksu/content';
 import { AksaraText } from '@taksu/ui/brand/aksara-text';
-import { RobotFace } from '@taksu/ui/brand/robot-face';
 import { Button } from '@taksu/ui/components/button';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import snowTimoBali from '@/assets/snow-timo-bali.webp';
-import { Features } from '@/components/robots/features';
 import { Lineup } from '@/components/robots/lineup';
+import { ScreenShowcase } from '@/components/robots/screen-showcase';
 import { UseCases } from '@/components/robots/use-cases';
 import { Container } from '@/components/shared/container';
 import { CtaBand } from '@/components/shared/cta-band';
@@ -20,6 +19,7 @@ import { Link } from '@/i18n/navigation';
 import { robotDemoUrl } from '@/lib/links';
 import { localeFromParams, resolveLocale } from '@/lib/locale';
 import { pageMetadata } from '@/lib/metadata';
+import { screenImage, showcaseScreens } from '@/lib/screens';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -41,6 +41,7 @@ export default async function HomePage({ params }: Props) {
   const locale = await resolveLocale(params);
   const [t, common] = await Promise.all([getTranslations('Home'), getTranslations('Common')]);
   const voiceDemo = robotDemoUrl(locale, 'snow', 'resort');
+  const officeDemo = robotDemoUrl(locale, 'timo', 'kantor-layanan');
 
   return (
     <>
@@ -89,34 +90,23 @@ export default async function HomePage({ params }: Props) {
         </Container>
       </section>
 
-      <section className="pb-16 lg:pb-24">
+      <section className="pb-16 lg:pb-24" aria-labelledby="showcase">
         <Container>
-          <div className="dark border-border bg-background text-foreground grid items-center gap-10 overflow-hidden rounded-xl border p-8 sm:p-12 lg:grid-cols-[0.8fr_1.2fr]">
-            <RobotFace
-              variant="kiosk"
-              mood="speaking"
-              label={t('voice.title')}
-              className="mx-auto max-w-72"
+          <SectionHeading id="showcase" title={t('showcase.title')} intro={t('showcase.intro')} />
+          <div className="mt-10 lg:mt-12">
+            <ScreenShowcase
+              label={t('showcase.tabs')}
+              items={showcaseScreens.map((id) => ({
+                id,
+                title: t(`showcase.screens.${id}.title`),
+                body: t(`showcase.screens.${id}.body`),
+                alt: t(`showcase.screens.${id}.alt`),
+                image: screenImage(locale, id),
+              }))}
+              note={t('showcase.note')}
+              demo={{ href: officeDemo, label: t('showcase.open'), newTab: common('newTab') }}
             />
-            <div>
-              <h2 className="text-3xl font-semibold [font-stretch:90%] sm:text-4xl">
-                {t('voice.title')}
-              </h2>
-              <p className="text-muted-foreground mt-4 text-lg leading-relaxed">
-                {t('voice.body')}
-              </p>
-              <ExternalButton href={voiceDemo} className="mt-6" newTabLabel={common('newTab')}>
-                {t('voice.cta')}
-              </ExternalButton>
-            </div>
           </div>
-        </Container>
-      </section>
-
-      <section className="pb-16 lg:pb-24">
-        <Container>
-          <SectionHeading title={t('features.title')} intro={t('features.intro')} />
-          <Features locale={locale} className="mt-10" />
         </Container>
       </section>
 

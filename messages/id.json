@@ -37,14 +37,44 @@
       "scale": "Digambar sesuai tinggi sebenarnya",
       "height": "{cm} cm"
     },
-    "voice": {
-      "title": "Bisa diajak bicara",
-      "body": "Pengenalan suara dan suara robot berjalan di server sendiri, bukan layanan luar. Tamu cukup bertanya, robot menjawab dari data tempat Anda.",
-      "cta": "Coba ajak bicara"
-    },
-    "features": {
-      "title": "Satu aplikasi kios untuk ketiganya",
-      "intro": "Perangkat lunak kios Taksu kami kembangkan sendiri, jadi bisa disesuaikan dengan layanan Anda."
+    "showcase": {
+      "title": "Satu aplikasi di ketiganya",
+      "intro": "Snow, Timo, dan Taksu Kiosk menjalankan aplikasi kios yang sama, buatan kami sendiri. Pilih layanan untuk melihat layarnya.",
+      "tabs": "Layanan di layar robot",
+      "note": "Tangkapan layar dari demo Timo di kantor layanan. Data tempat adalah contoh.",
+      "open": "Coba sendiri di demo",
+      "screens": {
+        "home": {
+          "title": "Menu utama",
+          "body": "Tamu disapa, lalu memilih layanan dengan sekali sentuh. Menu, loket, dan isinya disesuaikan untuk tempat Anda.",
+          "alt": "Menu utama di layar Timo: ngobrol, ambil antrean, buku tamu, dan petunjuk arah"
+        },
+        "voice": {
+          "title": "Ngobrol",
+          "body": "Tamu bertanya dengan suara atau mengetik. Suara diproses di server Anda sendiri, dan jawabannya hanya diambil dari data tempat Anda.",
+          "alt": "Percakapan dengan Timo tentang syarat membuat KTP-el"
+        },
+        "queue": {
+          "title": "Antrean",
+          "body": "Nomor antrean dengan angka Bali, perkiraan waktu tunggu, dan QR untuk memantau giliran, tercetak di tempat.",
+          "alt": "Tiket antrean A-001 dengan angka Bali dan kode QR"
+        },
+        "guestbook": {
+          "title": "Buku tamu",
+          "body": "Tamu mengisi data di layar, lalu kartu tamu dengan nama Aksara Bali dan QR langsung tercetak.",
+          "alt": "Kartu tamu untuk Ni Luh Putu Sari dengan nama dalam Aksara Bali"
+        },
+        "route": {
+          "title": "Petunjuk arah",
+          "body": "Rute di denah dengan langkah yang dibacakan. Snow dan Timo bisa mengantar, Taksu Kiosk mencetak slip rute.",
+          "alt": "Denah kantor dengan rute ke Loket B"
+        },
+        "aksara": {
+          "title": "Nama dalam Aksara Bali",
+          "body": "Tamu mengetik namanya, lalu kios menuliskannya dalam Aksara Bali dan mencetaknya sebagai kenang-kenangan.",
+          "alt": "Nama Wayan Sukarta dalam Aksara Bali di layar dan di kertas cetak"
+        }
+      }
     },
     "aksara": {
       "title": "Aksara Bali di setiap layar dan cetakan",
