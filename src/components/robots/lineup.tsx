@@ -2,10 +2,10 @@ import { type Locale, pick, type ReceptionRobot, robots } from '@taksu/content';
 import { RobotIllustration } from '@taksu/ui/brand/robot-illustration';
 import { Badge } from '@taksu/ui/components/badge';
 import { Button } from '@taksu/ui/components/button';
+import { ExternalLink } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { robotDemoUrl } from '@/lib/links';
-import { ExternalButton } from '../shared/external-button';
 
 /** Tight crops of each illustration, from the top of the head to the floor line. */
 const crops: Record<ReceptionRobot['slug'], string> = {
@@ -112,17 +112,23 @@ export async function Lineup({ locale }: { locale: Locale }) {
               <dt className="text-muted-foreground">{robotsT('priceLabel')}</dt>
               <dd className="font-semibold">{robotsT('price', { tier: priceKey(robot) })}</dd>
             </dl>
-            <div className="mt-6 flex flex-wrap gap-2">
-              <Button asChild>
-                <Link href={`/${robot.slug}`}>{common('viewDetails')}</Link>
+            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+              <Button asChild variant="outline">
+                <Link href={`/${robot.slug}`}>
+                  {common('viewDetails')}
+                  <span className="sr-only"> {robot.name}</span>
+                </Link>
               </Button>
-              <ExternalButton
-                variant="outline"
+              <a
                 href={robotDemoUrl(locale, robot.slug, robot.demoSite)}
-                newTabLabel={common('newTab')}
+                target="_blank"
+                rel="noopener"
+                className="decoration-primary inline-flex items-center gap-1.5 text-sm font-semibold underline decoration-2 underline-offset-4 hover:decoration-[3px]"
               >
                 {common('tryDemo')}
-              </ExternalButton>
+                <ExternalLink aria-hidden className="size-3.5" />
+                <span className="sr-only">{common('newTab')}</span>
+              </a>
             </div>
           </li>
         ))}
