@@ -1,6 +1,5 @@
 import { names, robots } from '@taksu/content';
 import { ThemeToggle } from '@taksu/ui/brand/theme-toggle';
-import { Button } from '@taksu/ui/components/button';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { LocaleSwitcher } from './locale-switcher';
@@ -15,6 +14,7 @@ export async function SiteHeader() {
     { href: '/compare', label: t('compare') },
     { href: '/aksara-bali', label: t('aksara') },
     { href: '/demo', label: t('demo') },
+    { href: '/contact', label: t('contact') },
   ];
 
   return (
@@ -27,10 +27,7 @@ export async function SiteHeader() {
         <div className="ml-auto flex items-center gap-1">
           <LocaleSwitcher label={t('language')} />
           <ThemeToggle label={t('theme')} />
-          <Button asChild size="sm" className="ml-2 hidden md:inline-flex">
-            <Link href="/contact">{t('cta')}</Link>
-          </Button>
-          <MobileNav items={items} labels={{ menu: t('menu'), close: t('close'), cta: t('cta') }} />
+          <MobileNav items={items} labels={{ menu: t('menu'), close: t('close') }} />
         </div>
       </div>
     </header>

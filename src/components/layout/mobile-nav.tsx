@@ -4,7 +4,6 @@ import { Button } from '@taksu/ui/components/button';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@taksu/ui/components/sheet';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
-import { Link } from '@/i18n/navigation';
 import { type NavItem, NavLinks } from './nav-links';
 import { Wordmark } from './wordmark';
 
@@ -13,7 +12,7 @@ export function MobileNav({
   labels,
 }: {
   items: NavItem[];
-  labels: { menu: string; close: string; cta: string };
+  labels: { menu: string; close: string };
 }) {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
@@ -31,11 +30,6 @@ export function MobileNav({
           </div>
         </SheetTitle>
         <NavLinks items={items} onNavigate={close} />
-        <Button asChild size="lg" className="mt-auto">
-          <Link href="/contact" onClick={close}>
-            {labels.cta}
-          </Link>
-        </Button>
       </SheetContent>
     </Sheet>
   );
