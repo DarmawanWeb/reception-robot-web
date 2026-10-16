@@ -16,12 +16,9 @@ const nextConfig: NextConfig = {
   images: { formats: ['image/avif', 'image/webp'] },
   async redirects() {
     return [
-      { source: '/:locale(id|en)/robots', destination: '/:locale/reception', permanent: true },
-      {
-        source: '/:locale(id|en)/robots/:slug',
-        destination: '/:locale/reception/:slug',
-        permanent: true,
-      },
+      // Robot pages sit at the top level here: /robots is the line-up, /robots/snow is /snow.
+      { source: '/:locale(id|en)/robots', destination: '/:locale', permanent: true },
+      { source: '/:locale(id|en)/robots/:slug', destination: '/:locale/:slug', permanent: true },
     ];
   },
 };
