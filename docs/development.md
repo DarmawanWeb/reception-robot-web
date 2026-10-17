@@ -91,8 +91,8 @@ language adviser.
   is `dark bg-background`. Raw colours only inside illustrations, such as the screen frames around
   the captures and the sign board on `/aksara-bali`.
 - Bali styling stays here: Aksara Bali, the poleng band, and the candi bentar mark belong to this
-  line and the kiosk. The company profile (`company.css`) and the education robots (`edu.css`)
-  stay plain.
+  line and the kiosk. The company profile (`company.css`) and the education robots (`taksu.css`
+  in `packages/edu-ui`) stay plain.
 - Keyboard focus stays visible; motion respects `prefers-reduced-motion`; decorative Aksara lines
   are hidden from screen readers; every image has an alt text in both languages or `alt=""` when
   it is decorative; a link that opens a demo says it opens a new tab.

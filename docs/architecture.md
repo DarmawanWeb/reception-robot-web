@@ -118,7 +118,7 @@ dark tokens, so `dark bg-background` makes a night-indigo band: the hero, the wh
 the robot demo band, the kiosk launcher card, and the call to action. The poleng band
 (`PolengBand`) and the candi bentar mark (`LogoMark`, also `src/app/icon.svg`) come from
 `@taksu/ui` too. This styling belongs to the reception line and the kiosk only; the company
-profile (`company.css`) and the education robots (`edu.css`) stay plain.
+profile (`company.css`) and the education robots (`taksu.css` in `packages/edu-ui`) stay plain.
 
 ## Kiosk captures and demo links
 
