@@ -3,12 +3,12 @@ import { companyUrl, kioskUrl, mailtoUrl, robotDemoUrl, whatsappUrl } from './li
 
 describe('links', () => {
   it('builds kiosk demo links with the locale prefix', () => {
-    expect(kioskUrl('id')).toBe('http://localhost:3001/id');
-    expect(robotDemoUrl('en', 'snow', 'resort')).toBe('http://localhost:3001/en/snow/resort');
+    expect(kioskUrl('id')).toBe('http://localhost:3101/id');
+    expect(robotDemoUrl('en', 'snow', 'resort')).toBe('http://localhost:3101/en/snow/resort');
   });
 
   it('links back to the company profile', () => {
-    expect(companyUrl('id', '/about')).toBe('http://localhost:3000/id/about');
+    expect(companyUrl('id', '/about')).toBe('http://localhost:3100/id/about');
   });
 
   it('only builds WhatsApp links when a number is set', () => {

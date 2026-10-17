@@ -88,8 +88,8 @@ Bali theme). Bali styling belongs only to this line and the kiosk; the education
 git clone --recursive https://github.com/DarmawanWeb/TaksuTech.git && cd TaksuTech
 pnpm install                       # the workspace, plus this submodule's commit hooks
 cp apps/robot/.env.example apps/robot/.env.local
-pnpm dev:robot                     # http://localhost:3004/id
-pnpm dev:kiosk                     # http://localhost:3001/id, for the demo links
+pnpm dev:robot                     # http://localhost:3104/id
+pnpm dev:kiosk                     # http://localhost:3101/id, for the demo links
 pnpm --filter @taksu/robot test    # message keys and links
 ```
 

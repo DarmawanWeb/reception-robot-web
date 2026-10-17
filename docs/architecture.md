@@ -179,9 +179,9 @@ Public settings are inlined at build time (`src/lib/site-config.ts`):
 
 | Variable | Purpose |
 |---|---|
-| `NEXT_PUBLIC_ROBOT_URL` | This site's address: canonical links, sitemap, social cards (default `http://localhost:3004`) |
-| `NEXT_PUBLIC_KIOSK_URL` | The kiosk app, for every demo link (default `http://localhost:3001`) |
-| `NEXT_PUBLIC_COMPANY_URL` | The company profile, linked from the footer and the why-venues table (default `http://localhost:3000`) |
+| `NEXT_PUBLIC_ROBOT_URL` | This site's address: canonical links, sitemap, social cards (default `http://localhost:3104`) |
+| `NEXT_PUBLIC_KIOSK_URL` | The kiosk app, for every demo link (default `http://localhost:3101`) |
+| `NEXT_PUBLIC_COMPANY_URL` | The company profile, linked from the footer and the why-venues table (default `http://localhost:3100`) |
 | `NEXT_PUBLIC_WHATSAPP_NUMBER` | Where WhatsApp messages go, in international format without `+`; empty means email only |
 
 The contact email is `brand.contact.email` in `@taksu/content`. In production the workspace's

@@ -11,8 +11,8 @@ git clone --recursive https://github.com/DarmawanWeb/TaksuTech.git && cd TaksuTe
 corepack enable                 # pnpm 10, Node 22.12 or newer
 pnpm install                    # also points this submodule's git hooks at the workspace's
 cp apps/robot/.env.example apps/robot/.env.local
-pnpm dev:robot                  # http://localhost:3004/id
-pnpm dev:kiosk                  # http://localhost:3001/id, for the demo links
+pnpm dev:robot                  # http://localhost:3104/id
+pnpm dev:kiosk                  # http://localhost:3101/id, for the demo links
 ```
 
 The example file points the demo links at the local kiosk app and the footer at a local company
@@ -25,8 +25,8 @@ Run from the workspace root (`pnpm --filter @taksu/robot <script>`) or from `app
 
 | Script | Does |
 |---|---|
-| `dev` | Next.js dev server on port 3004 |
-| `build`, `start` | Production build (standalone) and server on port 3004 |
+| `dev` | Next.js dev server on port 3104 |
+| `build`, `start` | Production build (standalone) and server on port 3104 |
 | `typecheck` | `next typegen`, then `tsc --noEmit` |
 | `test` | Vitest: the two message files have the same keys; kiosk, company, WhatsApp, and mail links |
 | `lint` | Biome lint |
